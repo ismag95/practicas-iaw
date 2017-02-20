@@ -10,12 +10,13 @@
 <body>
 <form action="final.php">
     <h1>Introduce las palabras:</h1>
-    <input type="text" id="palabra1" name="palabra1"><br>
-    <input type="text" id="palabra2" name="palabra2"><br>
-    <input type="text" id="palabra3" name="palabra3"><br>
-    <input type="text" id="palabra4" name="palabra4"><br>
-    <input type="text" id="palabra5" name="palabra5"><br>
+    <input type="text" id="palabra1" name="palabra[]"><br>
+    <input type="text" id="palabra2" name="palabra[]"><br>
+    <input type="text" id="palabra3" name="palabra[]"><br>
+    <input type="text" id="palabra4" name="palabra[]"><br>
+    <input type="text" id="palabra5" name="palabra[]"><br>
     <button>enviar</button>
 </form>
+
 </body>
 </html>

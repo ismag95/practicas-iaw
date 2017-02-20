@@ -25,10 +25,17 @@
                     "sesion","arbitro","electronica","intermitente","señal","instituto","academia",
                     "novia","profesor","portatil");
 shuffle($palabras);
+
+$resultados=array();
    for ($i=1;$i<=5;$i++){
-        $resultado=$palabras[$i]."<br>";
-       echo $_SESSION['palabras']=$resultado;
+       //mostramos las palabras que extraemos del array
+       $resultado= $palabras[$i]."<br>";
+       echo $resultado;
+       //ahora metemos las palabras en un array
+       array_push($resultados, $palabras[$i]);
+
    }
+$_SESSION['palabras']=$resultados;
 
 ?>
 <a href="datos.php">siguiente</a>
