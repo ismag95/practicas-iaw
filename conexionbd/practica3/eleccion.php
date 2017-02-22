@@ -6,9 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/primeras.css">
 </head>
 <body>
-<a href="login.php">login</a><br>
-<a href="alta.php">alta</a>
+<header>
+    <h1>INTRANET MENSAJERIA</h1>
+</header>
+<section>
+    <p><a href="login.php">login</a></p><br>
+    <p><a href="alta.php">alta</a></p>
+</section>
 </body>
 </html>

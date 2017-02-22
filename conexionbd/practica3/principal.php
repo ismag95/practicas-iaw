@@ -10,8 +10,12 @@ session_start();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/principal.css">
 </head>
 <body>
+<header>
+    <h1>INTRANET MENSAJERIA</h1>
+</header>
 <?php
 $_SESSION['id_usuario']="";
     if (isset($_SESSION['usuario'])){
@@ -42,11 +46,18 @@ $_SESSION['id_usuario']="";
         $resmendestino=$con->query($mensajes);
         //muestro los mensajes
         $fila2=$resmendestino->fetch_assoc();
-        echo "<p>mensaje para ".$fila2['para'].": ".$fila2['mensaje']."";
+        ?>
+        <div id="datos">
+        <?php
+        echo "<p>mensaje para ".$fila2['para'].": ".$fila2['mensaje']."</p>";
+        ?>
+            <a href="enviarmensaje.php">enviar mensaje</a>
+        </div>
+        <?php
     }else{
         header("location:login.php");
     }
 ?>
-<a href="enviarmensaje.php">enviar mensaje</a>
+
 </body>
 </html>
