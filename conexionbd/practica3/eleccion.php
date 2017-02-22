@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<a href="login.php">login</a><br>
+<a href="alta.php">alta</a>
 </body>
 </html>
